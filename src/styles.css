@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+@font-face {
+  font-family: PermanentMarker-Regular;
+  src: url(assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+@font-face {
+  font-family: ProtestRevolution-Regular;
+  src: url(assets/fonts/Protest_Revolution/ProtestRevolution-Regular.ttf);
+}
+@font-face {
+  font-family: Audiowide-Regular;
+  src: url(assets/fonts/Audiowide/Audiowide-Regular.ttf);
+}
+
+:root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}

@@ -1,0 +1,76 @@
+<div class="container-fluid">
+  <div class="row my-2">
+    <div class="col">
+      <h3>
+        Dashboard <i class="pi pi-th-large mx-2" style="font-size: 1.5rem"></i>
+      </h3>
+    </div>
+  </div>
+  <div class="details-container">
+    <div class="row">
+      <ng-container *ngFor="let content of detailsCard | keyvalue : returnZero">
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 my-2">
+          <div
+            class="card rounded-3 px-4 py-3 shadow-sm border-light details-card"
+          >
+            <div class="row">
+              <div class="col-12 col-lg-6 col-md-6 col-sm-6">
+                <span class="fs-3 fw-bold">{{ content.value.title }}</span>
+              </div>
+              <div
+                class="col-12 col-lg-6 col-md-6 col-sm-6 d-flex justify-content-end"
+              >
+                <small class="fw-bold pt-2 text-muted">
+                  <i
+                    class="pi {{ content.value.sideIcon }} me-1"
+                    style="font-size: 0.95rem"
+                  ></i>
+                  {{ content.value.sideText }}
+                </small>
+              </div>
+            </div>
+            <div class="details-container d-flex justify-content-between">
+              <span class="pt-3"> {{ content.value.description }}</span>
+              <span class="me-4 ms-3 counter-details"> 0 </span>
+            </div>
+            <small class="text-muted" style="font-size: 12px">
+              <i
+                class="pi {{ content.value.sideIcon }} me-1"
+                style="font-size: 0.72rem"
+              ></i>
+              {{ content.value.status }} 7:54:11 a.m.
+            </small>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="mid-container mt-3">
+    <div class="row">
+      <div class="col-12 col-lg-6 col-md-12 col-sm-12 my-2">
+        <div
+          class="card rounded-3 px-4 py-3 shadow-sm border-light table-products-card"
+        >
+          <span class="fs-3 fw-bold">Stock</span>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-md-12 col-sm-12 my-2">
+        <div
+          class="card rounded-3 px-4 py-3 shadow-sm border-light graph-monthly-card"
+        >
+          <span class="fs-3 fw-bold">Monthly sales</span>
+          <div class="mt-2">
+            <p-chart
+              type="line"
+              [data]="data"
+              [options]="options"
+              width="300"
+              height="300"
+            ></p-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

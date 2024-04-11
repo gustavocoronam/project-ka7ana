@@ -1,0 +1,85 @@
+.k-navbar {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+.k-nav-link,
+.k-nav-brand {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.k-nav-link {
+  font-weight: 300;
+}
+
+.k-dropbtn {
+  position: inherit;
+  display: block;
+  height: 100%;
+}
+
+.k-dropdown-content {
+  position: absolute;
+  right: 0;
+  min-width: 250px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  z-index: 1000;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease-in-out, visibility 0s linear 0.2s;
+}
+
+.k-dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.k-dropdown-content a:hover {
+  background-color: #f1f1f1;
+  transition: all ease-in-out 0.1s;
+}
+
+.k-dropdown-content a:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.k-dropdown-content a:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.k-nav-item-dropdown:hover .k-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.1s ease-in-out, visibility 0s linear 0s;
+}
+
+.k-ham-btn {
+  position: relative;
+  border: transparent;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.67);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  outline: none;
+}
+
+.k-ham-btn:hover {
+  color: rgba(255, 255, 255, 0.904);
+}
